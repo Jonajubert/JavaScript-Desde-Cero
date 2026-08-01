@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<!-- Indica que el documento utiliza HTML5 -->
+<html lang="es">
+
+<head>
+
+    <!-- Permite mostrar correctamente caracteres especiales -->
+    <meta charset="UTF-8">
+
+    <!-- Adapta la página a celulares y tablets -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <!-- Texto visible en la pestaña del navegador -->
+    <title>Conectando JavaScript con HTML</title>
+
+    <!--
+        Conecta el archivo JavaScript externo.
+
+        defer permite descargar el archivo mientras
+        el navegador continúa procesando el HTML.
+
+        El código se ejecutará cuando el documento
+        HTML haya sido analizado completamente.
+    -->
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- Encabezado principal -->
+    <header>
+
+        <h1>JavaScript Desde Cero</h1>
+
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+
+        <section>
+
+            <article>
+
+                <h2>Conectando JavaScript con HTML</h2>
+
+                <p>
+                    Presioná el botón para ejecutar una función
+                    escrita en un archivo JavaScript externo.
+                </p>
+
+                <!--
+                    El botón será seleccionado desde script.js
+                    mediante su identificador.
+                -->
+                <button id="botonSaludar" type="button">
+                    Saludar
+                </button>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+
+        <p>Creado por Jonatan Jubert</p>
+
+    </footer>
+
+</body>
+
+</html>
